@@ -1,0 +1,27 @@
+[build-system]
+requires = ["setuptools>=77", "wheel"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "evcs-grid-surge-guard"
+version = "1.0.0"
+description = "Detecting coordinated attacks on EV fast-charging networks and protecting the distribution feeder (pandapower)."
+readme = "README.md"
+requires-python = ">=3.11"
+license = "MIT"
+license-files = ["LICENSE"]
+dependencies = ["numpy>=1.26", "pandas>=2.2", "torch>=2.2", "pandapower>=2.14", "pydantic>=2.6,<3",
+                "matplotlib>=3.8", "fastapi>=0.110", "uvicorn[standard]>=0.29"]
+
+[project.optional-dependencies]
+dev = ["pytest>=8.0", "httpx>=0.27"]
+
+[project.scripts]
+evguard = "evguard.cli:main"
+
+[tool.setuptools.packages.find]
+where = ["src"]
+
+[tool.pytest.ini_options]
+testpaths = ["tests"]
+addopts = "-q"

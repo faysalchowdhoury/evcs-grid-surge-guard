@@ -1,0 +1,313 @@
+{
+  "plazas": 3,
+  "chargers": 18,
+  "train_days": 21,
+  "fit_s": 27.17535880000014,
+  "thresholds": {
+    "ramp_kw_per_min": 495.00000000000006,
+    "simultaneous_limit_jumps": 7,
+    "forecast_residual_kw": 421.7560546875
+  },
+  "benign_days": 7,
+  "false_alarms": {
+    "ramp": 0,
+    "forecast": 0,
+    "telemetry": 0,
+    "reconciliation": 0
+  },
+  "false_mitigations": 0,
+  "attacks": [
+    {
+      "day": 0,
+      "kind": "sync_ramp",
+      "start_min": 1164,
+      "connected_at_start": 8,
+      "detected_by": [],
+      "ttd_min": null,
+      "no_attack": {
+        "peak_fleet_kw": 854.8042584061826,
+        "max_swing_kw": 279.59736798448546,
+        "par": 5.361637851525981,
+        "line_max_pct": 91.97720336463091,
+        "v_min_pu": 0.9353720788722845,
+        "trafo_max_pct": 84.76885879662832,
+        "min_line_over_100": 0
+      },
+      "attack": {
+        "peak_fleet_kw": 854.8042584061826,
+        "max_swing_kw": 279.59736798448546,
+        "par": 5.361637851525981,
+        "line_max_pct": 91.97720336463091,
+        "v_min_pu": 0.9353720788722845,
+        "trafo_max_pct": 84.76885879662832,
+        "min_line_over_100": 0
+      },
+      "attack_guarded": {
+        "peak_fleet_kw": 854.8042584061826,
+        "max_swing_kw": 279.59736798448546,
+        "par": 5.361637851525981,
+        "line_max_pct": 91.97720336463091,
+        "v_min_pu": 0.9353720788722845,
+        "trafo_max_pct": 84.76885879662832,
+        "min_line_over_100": 0
+      }
+    },
+    {
+      "day": 1,
+      "kind": "oscillation",
+      "start_min": 1028,
+      "connected_at_start": 8,
+      "detected_by": [
+        "ramp"
+      ],
+      "ttd_min": 4,
+      "no_attack": {
+        "peak_fleet_kw": 963.5621004592108,
+        "max_swing_kw": 368.4188025474545,
+        "par": 4.845686795735192,
+        "line_max_pct": 91.65004588848726,
+        "v_min_pu": 0.9352315229471228,
+        "trafo_max_pct": 85.10558758059962,
+        "min_line_over_100": 0
+      },
+      "attack": {
+        "peak_fleet_kw": 1176.6520638562463,
+        "max_swing_kw": 1176.6520638562463,
+        "par": 5.924821226570933,
+        "line_max_pct": 92.00729365644132,
+        "v_min_pu": 0.9349092000971377,
+        "trafo_max_pct": 85.17970850378059,
+        "min_line_over_100": 0
+      },
+      "attack_guarded": {
+        "peak_fleet_kw": 963.5621004592108,
+        "max_swing_kw": 933.8249101502172,
+        "par": 4.847311521726724,
+        "line_max_pct": 91.6677483295053,
+        "v_min_pu": 0.9352177723765248,
+        "trafo_max_pct": 85.10926050103691,
+        "min_line_over_100": 0
+      }
+    },
+    {
+      "day": 2,
+      "kind": "soc_spoof",
+      "start_min": 1129,
+      "connected_at_start": 9,
+      "detected_by": [
+        "telemetry"
+      ],
+      "ttd_min": 3,
+      "no_attack": {
+        "peak_fleet_kw": 938.3892544602227,
+        "max_swing_kw": 296.35948541519497,
+        "par": 5.216180687584904,
+        "line_max_pct": 96.45132013097478,
+        "v_min_pu": 0.930962801978875,
+        "trafo_max_pct": 86.10181830088487,
+        "min_line_over_100": 0
+      },
+      "attack": {
+        "peak_fleet_kw": 938.3892544602227,
+        "max_swing_kw": 296.35948541519497,
+        "par": 5.216180687584904,
+        "line_max_pct": 96.45132013097478,
+        "v_min_pu": 0.930962801978875,
+        "trafo_max_pct": 86.10181830088487,
+        "min_line_over_100": 0
+      },
+      "attack_guarded": {
+        "peak_fleet_kw": 938.3892544602227,
+        "max_swing_kw": 296.35948541519497,
+        "par": 5.216180687584904,
+        "line_max_pct": 96.45132013097478,
+        "v_min_pu": 0.930962801978875,
+        "trafo_max_pct": 86.10181830088487,
+        "min_line_over_100": 0
+      }
+    },
+    {
+      "day": 3,
+      "kind": "meter_tamper",
+      "start_min": 1079,
+      "connected_at_start": 8,
+      "detected_by": [
+        "reconciliation"
+      ],
+      "ttd_min": 2,
+      "no_attack": {
+        "peak_fleet_kw": 861.761781034696,
+        "max_swing_kw": 273.9309938157147,
+        "par": 4.73740511070353,
+        "line_max_pct": 95.18830525786505,
+        "v_min_pu": 0.9324451036521286,
+        "trafo_max_pct": 85.83974790938362,
+        "min_line_over_100": 0
+      },
+      "attack": {
+        "peak_fleet_kw": 861.761781034696,
+        "max_swing_kw": 273.9309938157147,
+        "par": 4.73740511070353,
+        "line_max_pct": 95.18830525786505,
+        "v_min_pu": 0.9324451036521286,
+        "trafo_max_pct": 85.83974790938362,
+        "min_line_over_100": 0
+      },
+      "attack_guarded": {
+        "peak_fleet_kw": 861.761781034696,
+        "max_swing_kw": 273.9309938157147,
+        "par": 4.73740511070353,
+        "line_max_pct": 95.18830525786505,
+        "v_min_pu": 0.9324451036521286,
+        "trafo_max_pct": 85.83974790938362,
+        "min_line_over_100": 0
+      }
+    },
+    {
+      "day": 4,
+      "kind": "sync_ramp",
+      "start_min": 1129,
+      "connected_at_start": 12,
+      "detected_by": [],
+      "ttd_min": null,
+      "no_attack": {
+        "peak_fleet_kw": 1340.4132699954787,
+        "max_swing_kw": 303.9010543654965,
+        "par": 5.761804092373397,
+        "line_max_pct": 96.47493061150958,
+        "v_min_pu": 0.9310947944905106,
+        "trafo_max_pct": 86.10672287920826,
+        "min_line_over_100": 0
+      },
+      "attack": {
+        "peak_fleet_kw": 1340.4132699954787,
+        "max_swing_kw": 303.9010543654965,
+        "par": 5.789962907367056,
+        "line_max_pct": 96.47493061150958,
+        "v_min_pu": 0.9310947944905106,
+        "trafo_max_pct": 86.10672287920826,
+        "min_line_over_100": 0
+      },
+      "attack_guarded": {
+        "peak_fleet_kw": 1340.4132699954787,
+        "max_swing_kw": 303.9010543654965,
+        "par": 5.789962907367056,
+        "line_max_pct": 96.47493061150958,
+        "v_min_pu": 0.9310947944905106,
+        "trafo_max_pct": 86.10672287920826,
+        "min_line_over_100": 0
+      }
+    },
+    {
+      "day": 5,
+      "kind": "oscillation",
+      "start_min": 1054,
+      "connected_at_start": 11,
+      "detected_by": [
+        "ramp"
+      ],
+      "ttd_min": 4,
+      "no_attack": {
+        "peak_fleet_kw": 1176.2973178649327,
+        "max_swing_kw": 274.8540559987598,
+        "par": 5.707753548328758,
+        "line_max_pct": 95.57672253639325,
+        "v_min_pu": 0.9320089216656753,
+        "trafo_max_pct": 85.8491782929607,
+        "min_line_over_100": 0
+      },
+      "attack": {
+        "peak_fleet_kw": 1176.2973178649327,
+        "max_swing_kw": 883.1246462038106,
+        "par": 5.714656912355246,
+        "line_max_pct": 97.56492741791047,
+        "v_min_pu": 0.930227901110599,
+        "trafo_max_pct": 86.33291543118588,
+        "min_line_over_100": 0
+      },
+      "attack_guarded": {
+        "peak_fleet_kw": 1176.2973178649327,
+        "max_swing_kw": 883.1246462038106,
+        "par": 5.702814290709598,
+        "line_max_pct": 95.57672253639325,
+        "v_min_pu": 0.9324364216581319,
+        "trafo_max_pct": 85.73581646317646,
+        "min_line_over_100": 0
+      }
+    },
+    {
+      "day": 6,
+      "kind": "soc_spoof",
+      "start_min": 1014,
+      "connected_at_start": 10,
+      "detected_by": [
+        "telemetry"
+      ],
+      "ttd_min": 0,
+      "no_attack": {
+        "peak_fleet_kw": 1208.4669435621681,
+        "max_swing_kw": 380.69469652491716,
+        "par": 5.453450668042171,
+        "line_max_pct": 94.39363933095974,
+        "v_min_pu": 0.9328928978088431,
+        "trafo_max_pct": 85.6748481653329,
+        "min_line_over_100": 0
+      },
+      "attack": {
+        "peak_fleet_kw": 1208.4669435621681,
+        "max_swing_kw": 380.69469652491716,
+        "par": 5.453450668042171,
+        "line_max_pct": 94.39363933095974,
+        "v_min_pu": 0.9328928978088431,
+        "trafo_max_pct": 85.6748481653329,
+        "min_line_over_100": 0
+      },
+      "attack_guarded": {
+        "peak_fleet_kw": 1208.4669435621681,
+        "max_swing_kw": 380.69469652491716,
+        "par": 5.453450668042171,
+        "line_max_pct": 94.39363933095974,
+        "v_min_pu": 0.9328928978088431,
+        "trafo_max_pct": 85.6748481653329,
+        "min_line_over_100": 0
+      }
+    },
+    {
+      "day": 7,
+      "kind": "meter_tamper",
+      "start_min": 1069,
+      "connected_at_start": 11,
+      "detected_by": [
+        "reconciliation"
+      ],
+      "ttd_min": 2,
+      "no_attack": {
+        "peak_fleet_kw": 1100.9858145145836,
+        "max_swing_kw": 382.1237056284705,
+        "par": 5.015808400335719,
+        "line_max_pct": 92.98521323521523,
+        "v_min_pu": 0.9333600340060144,
+        "trafo_max_pct": 85.38258160929591,
+        "min_line_over_100": 0
+      },
+      "attack": {
+        "peak_fleet_kw": 1100.9858145145836,
+        "max_swing_kw": 382.1237056284705,
+        "par": 5.015808400335719,
+        "line_max_pct": 92.98521323521523,
+        "v_min_pu": 0.9333600340060144,
+        "trafo_max_pct": 85.38258160929591,
+        "min_line_over_100": 0
+      },
+      "attack_guarded": {
+        "peak_fleet_kw": 1100.9858145145836,
+        "max_swing_kw": 382.1237056284705,
+        "par": 5.015808400335719,
+        "line_max_pct": 92.98521323521523,
+        "v_min_pu": 0.9333600340060144,
+        "trafo_max_pct": 85.38258160929591,
+        "min_line_over_100": 0
+      }
+    }
+  ]
+}
